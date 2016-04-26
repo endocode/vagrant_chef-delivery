@@ -1,0 +1,33 @@
+{
+  "name": "test",
+  "description": "Delivery Cluster Environment",
+  "json_class": "Chef::Environment",
+  "chef_type": "environment",
+  "override_attributes": {
+    "delivery-cluster": {
+      "id": "test",
+      "driver": "ssh",
+      "ssh": {
+        "ssh_username": "root",
+        "key_file": "/root/.ssh/id_rsa"
+      },
+      "chef-server": {
+        "organization": "test",
+        "existing": false,
+        "host": "192.168.50.6"
+      },
+      "delivery": {
+        "version": "latest",
+        "enterprise": "test",
+        "license_file": "/root/delivery.license",
+        "host": "192.168.50.5"
+      },
+      "builders": {
+        "count": "1",
+        "1": {
+          "host": "192.168.50.8"
+        }
+      }
+    }
+  }
+}
