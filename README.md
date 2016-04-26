@@ -20,5 +20,5 @@ run via ´vagrant up´
 
 ## Contributors
 
-Sebastian Sucker <sebastian@endocode.com>
+Sebastian Sucker <sebastian@endocode.com>  
 Christian Johannsen <christian@chef.io>
