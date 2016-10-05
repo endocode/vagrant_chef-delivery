@@ -15,6 +15,7 @@ Vagrant.configure("2") do |config|
 
   config.vm.define "Delivery Server" do |delivery_server|
     delivery_server.vm.network "private_network", ip: "192.168.50.5"
+    delivery_server.vm.network "forwarded_port", guest: 443, host: 8443
     delivery_server.vm.provider :virtualbox do |vb|
         vb.customize ["modifyvm", :id, "--memory", "16384"]
         vb.customize ["modifyvm", :id, "--cpus", "4"]
