@@ -1,8 +1,8 @@
-# vagrant_chef-delivery
-Simple demo of CHEF Delivery deployable with vagrant
+# vagrant_chef-automate (former delivery)
+Simple demo of CHEF Automate deployable with vagrant
 
 This Vagrantfile can be used to bring up a basis demo of CHEFs Delivery Server.
-It implements the [documentation](https://docs.chef.io/install_delivery_ssh.html) provided by CHEF
+It implements the [documentation](https://docs.chef.io/install_chef_automate.html) provided by CHEF
 
 ## Prerequisites:
 
